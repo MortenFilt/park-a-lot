@@ -12,8 +12,10 @@
 #include <string>
 #include <ctime>
 #include <uuid/uuid.h>
+#include <nlohmann/json.hpp>
 
 using namespace std;
+using json = nlohmann::json;
 
 /**
  * @brief Area Picture model class
@@ -35,11 +37,9 @@ class PlatePicture{
         /**
          * @brief Construct a new Area Picture object
          * 
-         * @param pictureId 
-         * @param timeStamp 
          * @param picture 
          */
-        PlatePicture(string pictureId, time_t timeStamp, string picture);
+        PlatePicture(string picture);
         #pragma endregion
 
         #pragma region Public Getters
@@ -72,6 +72,18 @@ class PlatePicture{
          * @param picture 
          */
         void setPicture(string picture);
+        #pragma endregion
+
+        #pragma region Public Serializers
+        /**
+         * @brief Get json serialized data of the plate picture
+         * 
+         * @return json 
+         * "pictureId"
+         * "picture"
+         * "timeStamp"
+         */
+        json jsonSerialize();
         #pragma endregion
     
     private:
