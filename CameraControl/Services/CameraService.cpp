@@ -24,7 +24,7 @@
         // Return data
         ifstream binaryInFileHandler;
 
-        binaryInFileHandler.open("./../../picture2.ppm", ios::in | ios::binary);
+        binaryInFileHandler.open("./../../car.ppm", ios::in | ios::binary);
         if(!binaryInFileHandler)
         {
             std::cout << "Picture did not open" << std::endl;

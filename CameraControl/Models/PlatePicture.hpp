@@ -17,10 +17,6 @@
 using namespace std;
 using json = nlohmann::json;
 
-/**
- * @brief Area Picture model class
- * 
- */
 class PlatePicture{
     string pictureId;
     time_t timeStamp;

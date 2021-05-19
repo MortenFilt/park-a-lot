@@ -10,15 +10,17 @@
  */
 
 #include "./PlatePicture.hpp"
+#include "./../ExternalLibraries/base64.h"
 
 #pragma region Constructors
     PlatePicture::PlatePicture()
     {
-        uuid_t id;
-        uuid_generate(id);
-        this-> pictureId = PlatePicture::convertToString(id);
+        // uuid_t id;
+        // uuid_generate(id);
+        // this-> pictureId = PlatePicture::convertToString(id);
+        this-> pictureId = "VeryUniqueId";
         this-> timeStamp = time(0);
-        this-> picture = "No Picture";
+        this-> picture = "";
     };
 
     PlatePicture::PlatePicture(string picture)
@@ -26,8 +28,9 @@
         uuid_t id;
         uuid_generate(id);
         this-> pictureId = PlatePicture::convertToString(id);
+        // this-> pictureId = "VeryUniqueId";
         this-> timeStamp = time(0);
-        this-> picture = picture;
+        this-> picture = base64_encode(picture);
     }
 #pragma endregion
 
@@ -51,7 +54,8 @@
 #pragma region Public Setters
     void PlatePicture::setPicture(string picture)
     {
-        this->picture = picture;
+        string base64EncodedPicture = base64_encode(picture);
+        this->picture = base64EncodedPicture;
     }
 #pragma endregion
          
