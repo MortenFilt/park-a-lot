@@ -12,6 +12,7 @@ with picamera.PiCamera() as camera:
 	time.sleep(2)
 
 	while True:
+		camera.capture("picture.jpg")
 		image = np.empty((112*128*3), dtype=np.uint8)
 		camera.capture(image, 'bgr')
 		image = image.reshape((112, 128, 3))
