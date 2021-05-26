@@ -12,6 +12,8 @@
 #include <pistache/router.h>
 #include <pistache/http.h>
 
+using namespace Pistache;
+
 class CameraController {
     public:
         /**
@@ -20,5 +22,13 @@ class CameraController {
          * @param request 
          * @param response Json {"picture", "pictureId", "timeStamp"} 
          */
-        static void getPlatePicture(const Pistache::Rest::Request& request, Pistache::Http::ResponseWriter response);
+        static void getPlatePicture(const Rest::Request& request, Http::ResponseWriter response);
+
+        /**
+         * @brief Send the Plate Picture object to get stored temporarily
+         * 
+         * @param request 
+         * @param rresponse 
+         */
+        static void postPlatePicture(const Rest::Request& request, Http::ResponseWriter rresponse);
 };

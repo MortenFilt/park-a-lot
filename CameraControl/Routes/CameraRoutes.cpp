@@ -2,8 +2,22 @@
 
 using namespace Rest;
 
-CameraRouteManager::CameraRouteManager(Address addr):  Http::Endpoint(addr)
+CameraRouteManager::CameraRouteManager(Address addr):  Http::Endpoint(addr), httpEndpoint(std::make_shared<Http::Endpoint>(addr))
 {
-    Routes::Get(CameraRouteManager::cameraRouter, "/platePicture", Routes::bind(&CameraController::getPlatePicture));
-    setHandler(cameraRouter.handler());
+    Routes::Get(CameraRouteManager::cameraRouter, "/platePicture/:cameraId", Routes::bind(&CameraController::getPlatePicture));
+    Routes::Post(CameraRouteManager::cameraRouter, "/platePicture", Routes::bind(&CameraController::postPlatePicture));
+}
+
+void CameraRouteManager::init(size_t threads, size_t maxPayload)
+{
+    auto opts = Http::Endpoint::options()
+                    .threads(threads)
+                    .maxRequestSize(maxPayload);
+    httpEndpoint->init(opts);
+}
+
+void CameraRouteManager::start()
+{
+    httpEndpoint->setHandler(cameraRouter.handler());
+    httpEndpoint->serve();
 }
