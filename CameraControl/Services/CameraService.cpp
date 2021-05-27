@@ -15,7 +15,7 @@
 #pragma endregion
 
 #pragma region Get services
-    json CameraService::getPlatePicture(string cameraId)
+    json CameraService::getAreaPicture(string cameraId)
     {
         // Find Camera with given ID
         // Get camera to take a picture
@@ -24,7 +24,7 @@
         // Return data
         ifstream binaryInFileHandler;
 
-        binaryInFileHandler.open("./../../car.ppm", ios::in | ios::binary);
+        binaryInFileHandler.open("./../../areaPicture.jpg", ios::in | ios::binary);
         if(!binaryInFileHandler)
         {
             std::cout << "Picture did not open" << std::endl;

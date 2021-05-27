@@ -4,7 +4,7 @@ using namespace Rest;
 
 CameraRouteManager::CameraRouteManager(Address addr):  Http::Endpoint(addr), httpEndpoint(std::make_shared<Http::Endpoint>(addr))
 {
-    Routes::Get(CameraRouteManager::cameraRouter, "/platePicture/:cameraId", Routes::bind(&CameraController::getPlatePicture));
+    Routes::Get(CameraRouteManager::cameraRouter, "/areaPicture/:cameraId", Routes::bind(&CameraController::getAreaPicture));
     Routes::Post(CameraRouteManager::cameraRouter, "/platePicture", Routes::bind(&CameraController::postPlatePicture));
 }
 

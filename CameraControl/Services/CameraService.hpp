@@ -34,6 +34,6 @@ class CameraService {
          * "picture"
          * "timeStamp"
          */
-        json getPlatePicture(string cameraId);
+        json getAreaPicture(string cameraId);
 
 };
