@@ -1,0 +1,36 @@
+2021/5/25/9:57:2 [LOG] This is a test
+2021/05/25/10:18:47 [LOG] Nummerplade billede er taget
+2021/05/25/10:18:58 [LOG] Nummerplade billede er taget
+2021/05/25/10:19:08 [LOG] Nummerplade billede er taget
+2021/05/25/10:19:19 [LOG] Nummerplade billede er taget
+2021/05/25/10:39:15 [LOG] Nummerplade billede er taget
+2021/05/25/10:39:15 [LOG] Nummerplade billede sendt til billedeprocesserings servicen
+2021/05/25/10:39:25 [LOG] Nummerplade billede er taget
+2021/05/25/10:39:25 [LOG] Nummerplade billede sendt til billedeprocesserings servicen
+2021/05/25/10:42:43 [LOG] Nummerplade billede er taget
+2021/05/25/10:42:43 [LOG] Nummerplade billede sendt til billedeprocesserings servicen
+2021/05/25/10:42:53 [LOG] Nummerplade billede er taget
+2021/05/25/10:42:53 [LOG] Nummerplade billede sendt til billedeprocesserings servicen
+2021/05/25/10:45:11 [LOG] Nummerplade billede er taget
+2021/05/25/10:45:29 [LOG] Nummerplade billede sendt til billedeprocesserings servicen
+2021/05/25/10:45:40 [LOG] Nummerplade billede er taget
+2021/05/25/10:46:06 [LOG] Nummerplade billede sendt til billedeprocesserings servicen
+2021/05/25/10:46:17 [LOG] Nummerplade billede er taget
+2021/05/25/10:46:26 [LOG] Nummerplade billede sendt til billedeprocesserings servicen
+2021/05/25/10:46:37 [LOG] Nummerplade billede er taget
+2021/05/25/10:48:10 [LOG] Nummerplade billede er taget
+2021/05/25/10:48:10 [LOG] Nummerplade billede sendt til billedeprocesserings servicen
+2021/05/25/10:50:27 [LOG] Nummerplade billede er taget
+2021/05/25/10:50:27 [LOG] Nummerplade billede sendt til billedeprocesserings servicen
+2021/05/25/10:57:33 [LOG] Nummerplade billede er taget
+2021/05/25/10:57:46 [LOG] Nummerplade billede sendt til billedeprocesserings servicen
+2021/05/25/10:57:57 [LOG] Nummerplade billede er taget
+2021/05/25/10:58:19 [LOG] Nummerplade billede sendt til billedeprocesserings servicen
+2021/05/25/11:20:18 [LOG] Nummerplade billede er taget
+2021/05/25/11:27:10 [LOG] Nummerplade billede sendt til billedeprocesserings servicen
+2021/05/25/11:27:10 [LOG] Nummerplade billede er taget
+2021/05/25/11:27:20 [LOG] Nummerplade billede sendt til billedeprocesserings servicen
+2021/05/25/11:27:31 [LOG] Nummerplade billede er taget
+2021/05/25/11:27:40 [LOG] Nummerplade billede sendt til billedeprocesserings servicen
+2021/05/25/11:30:14 [LOG] Nummerplade billede er taget
+2021/05/25/11:30:32 [LOG] Nummerplade billede sendt til billedeprocesserings servicen
